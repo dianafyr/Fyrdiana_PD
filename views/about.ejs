@@ -1,0 +1,83 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--fleur font-->
+    <link rel="stylesheet" href="https://use.typekit.net/www6cxg.css">
+    <title>Portfolio</title>
+</head>
+
+<body style="background-color: rgb(111, 134, 132);">
+    <div>
+        <%- include ('partials/navbar.ejs') %>
+        <br><br>
+        <hr style="border: none; border-top: 2px solid; color: rgb(54, 65, 64); width: 30%; margin: 20px auto;">
+        <h1 style="font-family: fleur; font-weight: bolder; text-align: center; color: rgb(219, 208, 164); font-size: 80px;">About</h1>
+        <br>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <!-- Left Column: Image -->
+            <div class="col-md-6 text-center">
+                <img src="/images/myself_about.jpg" alt="sunset" style="width: 100%; max-width: 300px; border-radius: 10px;">
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="col-md-6">
+
+                <div style="display: flex; gap: 20px; font-family: filosofia, serif; font-weight: 400; color: rgb(54, 65, 64);">
+                
+                    <div style="flex: 1;">
+                        <h4 style="font-weight: 400; font-style: italic; color: rgb(54, 65, 64);">Educational background</h4>
+                        <p>PSLE: Madrasah Al-Irsyad (private school)</p>
+                        <p>O-Levels: Madrasah Al-Arabiah (private school)</p>
+                        <p>Diploma: Republic Polytechnic,</p>
+                        <p>where I obtained my diploma in Digital Design and Development.</p>
+
+                        <br>
+
+                        <div class="logo-container" style="margin-top: 20px; text-align: center;">
+                            <a href="/images/Fyrdiana_Resume.docx" download="Resume_Fyrdiana.pdf" style="text-decoration: none;">
+                                <img src="/images/resume_icon.png" alt="resumeicon" style="width: 65px; height: auto;">
+                                <p style="font-family: filosofia, serif; font-weight: 400; color: rgb(54, 65, 64); margin-top: 10px;">Download My Resume</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+            
+                    <div style="flex: 1;">
+                        <h4 style="font-weight: 400; font-style: italic; color: rgb(54, 65, 64);">Skills</h4>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Database Systems</li>
+                            <li>Front-end markup - HTML/CSS</li>
+                            <li>Adobe Illustrator/Photoshop</li>
+                            <li>UI/UX Design</li>
+                            <li>Foundation in Design Principles</li>
+                            <li>Problem solving</li>
+                            <li>Creative thinkinh</li>
+                            <li>Communication</li>
+                            <li>Curiousity</li>
+                        </ul>
+
+                        <a href="/contact" class="btn btn-outline-light" style="font-family: filosofia, serif; font-style: normal; color: rgb(219, 208, 164);">
+                            Get in touch
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
