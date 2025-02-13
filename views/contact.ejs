@@ -37,7 +37,15 @@
                         <label for="review_" style="color: white;">Message:</label>
                         <textarea class="form-control" id="message" placeholder="What's up?" name="message" required rows="4"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="background-color: rgb(54, 65, 64); border-color: rgb(54, 65, 64); font-family: filosofia, serif; font-style: normal; color: rgb(219, 208, 164);">Submit</button>
+                    <button type="submit" class="btn btn-primary" style="background-color: rgb(54, 65, 64); border-color: rgb(54, 65, 64); font-family: filosofia, serif; font-style: normal; color: rgb(219, 208, 164);" onclick="showSuccessAlert(event)">Submit</button>
+
+                    <script>
+                        function showSuccessAlert(event) {
+                            event.preventDefault();  // Prevent form submission if needed
+                            alert("Message sent successfully! I will get back to you soon.");
+                        }
+                    </script>
+
                 </form>
                 <br>
                 <h5 style="font-family: 'Times New Roman', Times, serif; color: rgb(54, 65, 64);">
